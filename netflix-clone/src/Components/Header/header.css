@@ -1,0 +1,134 @@
+.header-outer-container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(20, 20, 20);
+  height: 10vh;
+  color: white;
+  transition: all 0.5s ease-in;
+  z-index: 10;
+}
+
+.header-container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.header-left img {
+  height: 35px;
+  object-fit: contain;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-links li {
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-links li:hover {
+  color: #e50914;
+}
+
+.header-right ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-right ul li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-right ul li:hover {
+  color: #e50914;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: rgba(20, 20, 20, 0.95);
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px 20px;
+    border-radius: 10px;
+    z-index: 20;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.5);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .dropdown-icon {
+    display: block;
+  }
+
+  .header-left {
+    gap: 15px;
+  }
+
+  .header-left img {
+    height: 28px;
+  }
+}
+
+.header-left ul li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #e50914;
+  transition: width 0.3s;
+}
+
+.header-left ul li:hover::after {
+  width: 100%;
+}
+.header-left ul li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #e50914;
+  transition: width 0.3s;
+}
+
+.header-left ul li:hover::after {
+  width: 100%;
+}
+.header-left ul li::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: #e50914;
+  transition: width 0.3s;
+}
+
+.header-left ul li:hover::after {
+  width: 100%;
+}
