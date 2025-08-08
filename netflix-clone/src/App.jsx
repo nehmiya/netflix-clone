@@ -2,6 +2,7 @@
 
 import './App.css'
 import Home from './Pages/Home/Home'
+import Requests from './Utils/Requests'
 
 function App() {
 
@@ -9,7 +10,7 @@ function App() {
     <>
       <div className="app">
         <Home />
-        
+        <Requests />
       </div>
     </>
   )
