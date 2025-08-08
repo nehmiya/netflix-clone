@@ -10,7 +10,6 @@ function App() {
     <>
       <div className="app">
         <Home />
-        <Requests />
       </div>
     </>
   )
